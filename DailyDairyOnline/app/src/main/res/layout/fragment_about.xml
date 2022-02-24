@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/viewLives"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbrackground"
+                android:drawableStart="@drawable/ic_house"
+                android:backgroundTint="#034E8C"
+                android:text="575 Zone 4B Brgy. San Jose"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/viewFrom"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbrackground"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_location"
+                android:text="Urdaneta City, Pangasinan"
+                android:backgroundTint="#034E8C"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/viewWork"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbrackground"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_work"
+                android:text="PLDT Urdaneta Branch Inc."
+                android:backgroundTint="#034E8C"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/viewEduc"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbrackground"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_school"
+                android:text="System Analysis"
+                android:backgroundTint="#034E8C"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/viewStatus"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbrackground"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_love"
+                android:text="Single"
+                android:backgroundTint="#034E8C"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/viewBday"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbrackground"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_cake"
+                android:text="September 12, 2000"
+                android:backgroundTint="#034E8C"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/viewEmail"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbrackground"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_email"
+                android:text="eduardosantosnorbertejr.bsit.ucu@gmail.com"
+                android:backgroundTint="#034E8C"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:layout_marginBottom="100dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

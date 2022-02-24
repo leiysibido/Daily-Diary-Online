@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity"
+    android:orientation="vertical"
+    android:background="#0C2D80">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:tint="@color/white"
+                app:maxImageSize="10dp"
+                android:src="@drawable/ic_back"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/btnProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_profile"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="220dp"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Information"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="Full Name"
+            android:textColorHint="#FFFFFF"
+            android:drawableStart="@drawable/ic_profile"
+            android:background="@drawable/edittextbrackground"
+            android:backgroundTint="#034E8C"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="10dp"/>
+
+        <EditText
+            android:id="@+id/txtNickname"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="Nickname"
+            android:textColorHint="#FFFFFF"
+            android:drawableStart="@drawable/ic_profile"
+            android:background="@drawable/edittextbrackground"
+            android:backgroundTint="#034E8C"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="10dp"/>
+
+        <EditText
+            android:id="@+id/txtLives"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="Lives"
+            android:textColorHint="#FFFFFF"
+            android:drawableStart="@drawable/ic_house"
+            android:background="@drawable/edittextbrackground"
+            android:backgroundTint="#034E8C"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="10dp"/>
+
+        <EditText
+            android:id="@+id/txtFrom"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="From"
+            android:textColorHint="#FFFFFF"
+            android:drawableStart="@drawable/ic_location"
+            android:background="@drawable/edittextbrackground"
+            android:backgroundTint="#034E8C"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="10dp"/>
+
+        <EditText
+            android:id="@+id/txtWork"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="Work"
+            android:textColorHint="#FFFFFF"
+            android:drawableStart="@drawable/ic_work"
+            android:background="@drawable/edittextbrackground"
+            android:backgroundTint="#034E8C"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="10dp"/>
+
+        <EditText
+            android:id="@+id/txtEduc"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="Education"
+            android:textColorHint="#FFFFFF"
+            android:drawableStart="@drawable/ic_school"
+            android:background="@drawable/edittextbrackground"
+            android:backgroundTint="#034E8C"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="10dp"/>
+
+        <EditText
+            android:id="@+id/txtStatus"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="Relationship Status"
+            android:textColorHint="#FFFFFF"
+            android:drawableStart="@drawable/ic_love"
+            android:background="@drawable/edittextbrackground"
+            android:backgroundTint="#034E8C"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="10dp"/>
+
+
+        <EditText
+            android:id="@+id/txtBday"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="Birthday"
+            android:textColorHint="#FFFFFF"
+            android:drawableStart="@drawable/ic_cake"
+            android:background="@drawable/edittextbrackground"
+            android:backgroundTint="#034E8C"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="10dp"/>
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="Email"
+            android:textColorHint="#FFFFFF"
+            android:drawableStart="@drawable/ic_email"
+            android:background="@drawable/edittextbrackground"
+            android:backgroundTint="#034E8C"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="10dp"/>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Save"
+            android:drawableEnd="@drawable/ic_round_arrow_forward_ios_24"
+            android:textColor="#0C2D80"
+            android:backgroundTint="@color/white"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

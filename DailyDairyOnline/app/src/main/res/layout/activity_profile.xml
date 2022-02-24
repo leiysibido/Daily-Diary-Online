@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#0C2D80"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_profile"
+            android:layout_marginStart="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="#1A46AD"
+                android:layout_gravity="right"
+                android:drawableEnd="@drawable/ic_exit"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:id="@+id/viewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eduardo Norberte Jr."
+                android:layout_marginTop="0dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/viewNickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KaynSer"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="italic"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MY FEED"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABOUT" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"/>
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#0C2D80"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="50dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00555555"
+                app:itemIconTint="@color/white"
+                app:itemTextColor="@color/white"
+                app:menu="@menu/bottom_menu" />
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0C2D80"
+            android:layout_marginStart="150dp"
+            app:fab_colorPressed="@color/white"
+            app:layout_anchor="@id/bottomNavigationView">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#0C2D80"
+                android:src="@drawable/ic_edit"
+                android:tint="@color/white"
+                app:maxImageSize="50dp"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#0C2D80"
+                android:src="@drawable/ic_add"
+                android:tint="@color/white"
+                app:maxImageSize="50dp"/>
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>

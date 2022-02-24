@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C2D80"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logoo"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create your Account"
+        android:fontFamily="sans-serif"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+
+    <EditText
+        android:id="@+id/RegEmail"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:drawableStart="@drawable/ic_email"
+        android:background="@drawable/edittextbrackground"
+        android:backgroundTint="#034E8C"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:paddingStart="10dp"/>
+
+    <EditText
+        android:id="@+id/RegPassword"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/edittextbrackground"
+        android:backgroundTint="#034E8C"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:paddingStart="10dp"/>
+
+    <EditText
+        android:id="@+id/RegRePassword"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:background="@drawable/edittextbrackground"
+        android:backgroundTint="#034E8C"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:paddingStart="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:id="@+id/SignButton"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="#0C2D80"
+        android:drawableEnd="@drawable/ic_round_arrow_forward_ios_24"
+        android:background="@drawable/edittextbrackground"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have account?"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/haveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="#FFFFFF"
+            android:text="Sign In here"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
